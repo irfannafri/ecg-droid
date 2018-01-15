@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pink">#ff6861</color>
+    <color name="pinkDark">#ec5d55</color>
+    <color name="skyBlue">#428bca</color>
+    <color name="skyBlueDark">#2e88d6</color>
+    <color name="pureWhite">#ffffff</color>
+    <color name="brokenWhite">#f4f5f7</color>
+    <color name="brokenWhiteDark">#eceef1</color>
+    <color name="turquoise">#26ae90</color>
+    <color name="turquoiseDark">#26ae90</color>
+    <color name="grey">#333333</color>
+    <color name="greyDark">#222222</color>
+    <color name="greyLight">#888888</color>
+    <color name="greyLighter">#999999</color>
+    <color name="asphalt">#3b4148</color>
+    <color name="asphaltLight">#5e6266</color>
+    <color name="asphaltDark">#2e3237</color>
+
+
+    <color name="colorPrimary">@color/pink</color>
+    <color name="colorPrimaryDark">@color/pinkDark</color>
+    <color name="colorAccent">@color/skyBlue</color>
+    <color name="textColorPrimary">@color/brokenWhite</color>
+    <color name="windowBackground">@color/brokenWhite</color>
+
+
+
+
+    <color name="bg_login">@color/colorPrimary</color>
+    <color name="btn_login_text">@color/colorPrimaryDark</color>
+    <color name="btn_login_bg">@color/brokenWhiteDark</color>
+    <color name="input_login">@color/greyDark</color>
+    <color name="input_login_hint">@color/greyLighter</color>
+
+    <color name="bg_register">@color/asphaltDark</color>
+    <color name="btn_register_text">@color/brokenWhite</color>
+    <color name="btn_register_bg">@color/colorPrimary</color>
+    <color name="input_register">@color/greyLight</color>
+    <color name="input_register_bg">@color/asphalt</color>
+    <color name="input_register_hint">@color/asphaltLight</color>
+
+
+
+
+    <color name="lbl_name">@color/grey</color>
+    <color name="btn_logut_bg">@color/pink</color>
+
+
+    <color name="bg_main">@color/skyBlue</color>
+    <color name="white">@color/pureWhite</color>
+
+    <color name="error_dialog">@color/colorPrimaryDark</color>
+
+</resources>
