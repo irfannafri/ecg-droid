@@ -3,6 +3,19 @@
     <EditTextPreference android:title="Bitalino Device"
         android:key="bluetooth"
         android:summary="Please provide your bitalino mac address (xx:xx:xx:xx)"></EditTextPreference>
+
+
+    <ListPreference
+        android:title="Sampling Rate"
+        android:summary="This option will set the sampling rate"
+        android:key="samplingRate"
+        android:defaultValue="@string/default_value_ratingRate"
+        android:entries="@array/ratingRate"
+        android:entryValues="@array/ratingRateValue"
+
+        />
+
+
     <CheckBoxPreference android:title="Application Updates"
         android:defaultValue="false"
         android:summary="This option if selected will allow the application to check for latest versions."

@@ -16,7 +16,7 @@ import java.util.UUID;
  *
  * @author David Gonzalez
  *
- */
+ */b
 
 
 public class BitalinoAndroidDevice{

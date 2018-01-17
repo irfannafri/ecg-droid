@@ -78,8 +78,8 @@ public class BitalinoIntentService extends IntentService {
 
     public void openConnection() throws Exception {
         SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
-        String mac = "98:D3:31:90:3E:00";
-        //String mac = "98:D3:31:B2:BB:7D";
+        //String mac = "98:D3:31:90:3E:00";
+        String mac = "98:D3:31:B2:BB:7D";
         String strBluetoothDevice = SP.getString("bluetooth", mac); //mac;//
 
         final String remoteDevice = strBluetoothDevice;

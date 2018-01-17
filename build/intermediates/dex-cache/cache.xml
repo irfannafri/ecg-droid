@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\AsusK46C\.gradle\caches\modules-2\files-2.1\com.mcxiaoke.volley\library\1.0.19\a8f23f65fc1e522ee4a1a697ee569901a46741fa\library-1.0.19.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a8f23f65fc1e522ee4a1a697ee569901a46741fa">
+        <dex dex="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\transforms\dex\debug\folders\1000\10\library-1.0.19_2e72741a644f79c35c2a14033ba9dc6bc735e1f0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\AsusK46C\.gradle\caches\modules-2\files-2.1\asm\asm\3.1\c157def142714c544bdea2e6144645702adf7097\asm-3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c157def142714c544bdea2e6144645702adf7097">
+        <dex dex="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\transforms\dex\debug\folders\1000\10\asm-3.1_939e16c3fc56c8bfeb487210f580f33f1795e0f9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\AsusK46C\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\16.0.1\5fa98cd1a63c99a44dd8d3b77e4762b066a5d0c5\guava-16.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5fa98cd1a63c99a44dd8d3b77e4762b066a5d0c5">
+        <dex dex="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\transforms\dex\debug\folders\1000\10\guava-16.0.1_e31d650840794d6e14f0e93494ce62ecf2ed16bb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f19a800a69ebd82ae34ea0376f531e32c736c720">
+        <dex dex="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_1ea41e0485914d125bc862e10910d774489e5ebb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support.constraint-constraint-layout-1.0.2_d30cea722dff78a94e25a298d054e1b7b1ebf450\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\AsusK46C\.gradle\caches\modules-2\files-2.1\aopalliance\aopalliance\1.0\235ba8b489512805ac13a8f9ea77a1ca5ebe3e8\aopalliance-1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0235ba8b489512805ac13a8f9ea77a1ca5ebe3e8">
+        <dex dex="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\transforms\dex\debug\folders\1000\10\aopalliance-1.0_13793efa9220ebff815a8e95834c1a5df3afd13a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e1ca111e8106fc116bdbc4de0b51b7d69095b7a">
+        <dex dex="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_af312ffe0c383c8e9f6707d7b7ffba6ac69b8cff\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\AsusK46C\.gradle\caches\modules-2\files-2.1\com.github.PhilJay\MPAndroidChart\v3.0.2\5d4eb08a326bdbd7fbbddc769666898c9936b282\MPAndroidChart-v3.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5d4eb08a326bdbd7fbbddc769666898c9936b282">
+        <dex dex="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\transforms\dex\debug\folders\1000\10\MPAndroidChart-v3.0.2_c8017a1060c1b682255aa3226a032100039c3eb9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.3.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.3.1_1d6dd0e4bb606ccb396d0e48dd92449d3f345328\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\AsusK46C\.gradle\caches\modules-2\files-2.1\org.roboguice\roboguice\3.0b-experimental\8290a88afc247c0d3c1bb3efd57f4eb03c6fb21c\roboguice-3.0b-experimental.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8290a88afc247c0d3c1bb3efd57f4eb03c6fb21c">
+        <dex dex="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\transforms\dex\debug\folders\1000\10\roboguice-3.0b-experimental_7ee15cd2a00b61a66f66aed8cecc48b4fa8ce35e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\exploded-aar\com.jjoe64\graphview\4.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="37bf8de5b4f9e7e93006db783b9b3168e32e38e9">
+        <dex dex="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.jjoe64-graphview-4.0.1_4353a6395d3278c198260ce75e168f3b5e65b372\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\AsusK46C\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\transforms\dex\debug\folders\1000\10\javax.inject-1_43ff5c8d4b911628e55e79e13034f922564f3b90\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\AsusK46C\.gradle\caches\modules-2\files-2.1\org.sonatype.sisu.inject\cglib\2.2.1-v20090111\7ce5e983fd0e6c78346f4c9cbfa39d83049dda2\cglib-2.2.1-v20090111.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="07ce5e983fd0e6c78346f4c9cbfa39d83049dda2">
+        <dex dex="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\transforms\dex\debug\folders\1000\10\cglib-2.2.1-v20090111_d0dfd0e1abf677ff99813631b1612aaf3fcc1380\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.3.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.3.1_acc5ea30821b0d6263d362e822832466f50ee5ac\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\AsusK46C\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit\retrofit\1.5.0\54271c5c7a4dfa1c7cd53d0b10956ea35d32abb0\retrofit-1.5.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="54271c5c7a4dfa1c7cd53d0b10956ea35d32abb0">
+        <dex dex="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\transforms\dex\debug\folders\1000\10\retrofit-1.5.0_29a283cc36424257e0be00e926f16a3d2cfdf0b7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.3.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.3.1_8658dbc34295194f92e480d70fff6ab6958915b4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.3.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.3.1_fafcc581ebe4fd7c1749082d939411a61e292700\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.3.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.3.1_5a60bf0da9960873b6da52c984b881b69c33ab17\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\AsusK46C\.gradle\caches\modules-2\files-2.1\com.bitalino\bitalino-java-sdk\1.0\a54e973a30fcffb3edbcf2ed1ea4a4d459aef9c6\bitalino-java-sdk-1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a54e973a30fcffb3edbcf2ed1ea4a4d459aef9c6">
+        <dex dex="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\transforms\dex\debug\folders\1000\10\bitalino-java-sdk-1.0_115f81a2eff107f6858fce24168222f6ce25a6fd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\exploded-aar\com.android.support\transition\25.3.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-transition-25.3.1_301a94773a96b65a81a06530414b8c00fdaaeee4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.3.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.3.1_4a06021403b600a92f4c207a13df536531e741cc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\exploded-aar\com.android.support\design\25.3.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-25.3.1_ef74bd8b0990137d219d1e8119e535d17cfab728\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.3.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.3.1_f49f72bf05b00565502fd85132dd253b2bae964b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.3.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.3.1_eae9e196d6d3811be69a36f7698bc2b37c19d791\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.3.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.3.1_3b2d6f151172aa206dd7ad444d2f50eb455defd8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\AsusK46C\.gradle\caches\modules-2\files-2.1\com.google.inject\guice\3.0\28586dc97c525501329d9a242fc3402041e3572d\guice-3.0-no_aop.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="28586dc97c525501329d9a242fc3402041e3572d">
+        <dex dex="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\transforms\dex\debug\folders\1000\10\guice-3.0-no_aop_caf4eda29ae90d8defe811b6d4fd6a40d9e9f602\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.3.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.3.1_c851c17e9a447ee66d673f607ea5cd41fac3af55\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\AsusK46C\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.2_35f1617c95e1e84f2575326ef74f483417ddca88\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\AsusK46C\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.3.1_928e4fd2a4a6d7573149e803714713cf4c11b25e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Program Files\Android\Android Studio\gradle\m2repository\com\google\code\gson\gson\2.2.4\gson-2.2.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="D:\Lipi\LIPI\Android\ecg-droid\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.2.4_313aff129984a0a45e086871ec03bfcc02e7284e\classes.dex" />
+    </item>
+
+</items>
