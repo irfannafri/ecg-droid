@@ -15,7 +15,6 @@
 
         />
 
-
     <CheckBoxPreference android:title="Application Updates"
         android:defaultValue="false"
         android:summary="This option if selected will allow the application to check for latest versions."

@@ -6,11 +6,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.ServiceConnection;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.IBinder;
+import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
@@ -33,6 +35,7 @@ import com.ilham1012.ecgbpi.helper.FileWriterECG;
 import com.ilham1012.ecgbpi.helper.SQLiteHandler;
 import com.ilham1012.ecgbpi.RetrofitInterface.FileUploadService;
 import com.ilham1012.ecgbpi.services.BitalinoIntentService;
+import com.ilham1012.ecgbpi.services.QRSDetectionIntentService;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -85,8 +88,9 @@ public class RecordActivity extends RoboActivity implements ServiceConnection {
     //    private GraphView graph;
     private LineChart rawChart;
     private Integer[] buffer = new Integer[60];
-    private Intent intentSvc;
+    private Intent intentSvc,intent;
     private FileWriterECG fileWriterECG, fileWriterECGPeak;
+    public int samplingR, bufferWindowSize;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -118,8 +122,14 @@ public class RecordActivity extends RoboActivity implements ServiceConnection {
                 }
             }
         });
+        SharedPreferences pref = this.getSharedPreferences("com.ilham1012.ecgbpi", Context.MODE_PRIVATE);
+        samplingR = pref.getInt("samplingRates", 360);
+
         intentSvc = new Intent(this, BitalinoIntentService.class);
         intentSvc.putExtra("ECG_RECORD", ecgRecord);
+        intentSvc.putExtra("samplingR", samplingR);
+        intent = new Intent(this, QRSDetectionIntentService.class);
+        intent.putExtra("samplingR", samplingR);
         mIntentFilterValue = new IntentFilter();
         mIntentFilterValue.addAction(Constants.BROADCAST_BITALINO_SGLVALUE);
         mIntentFilterQRS = new IntentFilter();
@@ -146,7 +156,7 @@ public class RecordActivity extends RoboActivity implements ServiceConnection {
             if (fileWriterECGPeak != null) {
                 for (int i = 0; i < result.length; i++) {
                     if (result[i] != 0)
-                        fileWriterECGPeak.writeDataToFile(ith_result * Constants.BUFFER_WINDOW_SIZE + ((int) result[i] - 1));
+                        fileWriterECGPeak.writeDataToFile(ith_result * bufferWindowSize + ((int) result[i] - 1));
                 }
             }
         }

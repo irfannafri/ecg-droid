@@ -1,8 +1,11 @@
 package com.ilham1012.ecgbpi.activity;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceFragment;
+import android.preference.PreferenceManager;
 
 import com.ilham1012.ecgbpi.R;
 
@@ -11,6 +14,9 @@ import com.ilham1012.ecgbpi.R;
  */
 
 public class MyPreferencesActivity extends PreferenceActivity {
+    public static int samplingR;
+    public static SharedPreferences prefs;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +29,6 @@ public class MyPreferencesActivity extends PreferenceActivity {
             super.onCreate(savedInstanceState);
             addPreferencesFromResource(R.xml.preferences);
         }
-
     }
 
 }

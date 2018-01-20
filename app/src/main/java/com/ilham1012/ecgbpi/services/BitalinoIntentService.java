@@ -1,5 +1,6 @@
 package com.ilham1012.ecgbpi.services;
 
+import android.app.Activity;
 import android.app.IntentService;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
@@ -17,7 +18,6 @@ import android.widget.Toast;
 import com.bitalino.comm.BITalinoDevice;
 import com.bitalino.comm.BITalinoFrame;
 import com.ilham1012.ecgbpi.POJO.EcgRecord;
-import com.ilham1012.ecgbpi.activity.RecordActivity;
 import com.ilham1012.ecgbpi.app.Constants;
 import com.ilham1012.ecgbpi.helper.FileWriterECG;
 import com.ilham1012.ecgbpi.helper.SQLiteHandler;
@@ -46,9 +46,12 @@ public class BitalinoIntentService extends IntentService {
             .fromString("00001101-0000-1000-8000-00805F9B34FB");
     private final static int[] selChannels = {2};
     public boolean isRunning = true;
-    private double[] buffer = new double[Constants.BUFFER_WINDOW_SIZE];
+    private int samplingR;
+    private int bufferWindowSize;
+    private double[] buffer;
     private EcgRecord ecgRecord;
     private FileWriterECG fileWriterECG;
+    private Intent intent = new Intent();
 
     public BitalinoIntentService() {
         super("BitalinoIntentService");
@@ -61,6 +64,7 @@ public class BitalinoIntentService extends IntentService {
      * @see IntentService
      */
     // TODO: Customize helper method
+
     public static void startActionFoo(Context context, String param1, String param2) {
 
     }
@@ -78,9 +82,13 @@ public class BitalinoIntentService extends IntentService {
 
     public void openConnection() throws Exception {
         SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
-        //String mac = "98:D3:31:90:3E:00";
-        String mac = "98:D3:31:B2:BB:7D";
+        String mac = "98:D3:31:90:3E:00";
+        //String mac = "98:D3:31:B2:BB:7D";
         String strBluetoothDevice = SP.getString("bluetooth", mac); //mac;//
+
+        samplingR = intent.getIntExtra("samplingR", 360);
+        bufferWindowSize = Constants.WINDOW_SIZE * samplingR;
+        buffer = new double[bufferWindowSize];
 
         final String remoteDevice = strBluetoothDevice;
 
@@ -94,7 +102,7 @@ public class BitalinoIntentService extends IntentService {
         sock.connect();
 
 
-        bitalino = new BITalinoDevice(Constants.SAMPLING_RATE, selChannels); // new int[]{0, 1, 2, 3, 4, 5});
+        bitalino = new BITalinoDevice(samplingR, selChannels); // new int[]{0, 1, 2, 3, 4, 5});
         bitalino.open(sock.getInputStream(), sock.getOutputStream());
         bitalino.start();
     }
@@ -123,7 +131,7 @@ public class BitalinoIntentService extends IntentService {
             boolean isFirst = true;
             int ith_bw = 0;
             while (isRunning) {
-                if (counter % Constants.BUFFER_WINDOW_SIZE == 0) {
+                if (counter % bufferWindowSize == 0) {
                     counter = 0;
                     if (!isFirst) {
                         Intent bitIntent = new Intent(this, QRSDetectionIntentService.class);
@@ -134,7 +142,7 @@ public class BitalinoIntentService extends IntentService {
                         startService(bitIntent);
                     }
                 }
-                BITalinoFrame[] frames = bitalino.read(Constants.SAMPLING_RATE);
+                BITalinoFrame[] frames = bitalino.read(samplingR);
 
                 for (BITalinoFrame frame : frames) {
                     //buffer[counter] untuk keperluan pengolahan data

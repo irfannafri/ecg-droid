@@ -17,6 +17,7 @@
     <string name="welcome">Welcome</string>
     <string name="name">Fullname</string>
     <string name="waiting">Waiting...</string>
+    <string name="sr">Sampling Rate</string>
 
 
     <string name="menu_connect">Connect</string>

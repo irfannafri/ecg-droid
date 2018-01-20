@@ -3,8 +3,6 @@ package com.ilham1012.ecgbpi.services;
 import android.app.IntentService;
 import android.content.Intent;
 import android.content.Context;
-import android.content.SharedPreferences;
-import android.preference.PreferenceManager;
 import android.util.Log;
 
 import com.ilham1012.ecgbpi.app.Constants;
@@ -13,8 +11,11 @@ import com.ilham1012.ecgbpi.qrsdetection.ZeroCrossing;
 
 public class QRSDetectionIntentService extends IntentService {
     public static final String TAG = "[QRSDetectionIS]";
+    private int samplingR;
+    private Intent intent = new Intent();
 
     public QRSDetectionIntentService() {
+
         super(QRSDetectionIntentService.class.getName());
     }
 
@@ -28,14 +29,9 @@ public class QRSDetectionIntentService extends IntentService {
     }
 
     private void handleQRSProcessing(Intent intent) {
-
-        SharedPreferences ratingR = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
-        int rt =360;
-        int strRatingRate = ratingR.getInt("samplingRate", rt);
-
-
         double[] buffer = intent.getDoubleArrayExtra(Constants.BITALINO60_BUFFER_DATA);
-        ZeroCrossing zeroCrossing = new ZeroCrossing(buffer, strRatingRate);
+        samplingR = intent.getIntExtra("samplingR", 360);
+        ZeroCrossing zeroCrossing = new ZeroCrossing(buffer, samplingR);
         zeroCrossing.doZeroCrossing();
         int ith = intent.getIntExtra(Constants.ITH_BUFFERWINDOW, 0);
         double[] arrayx = zeroCrossing.y7;
