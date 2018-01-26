@@ -85,8 +85,8 @@ public class BitalinoIntentService extends IntentService {
         String mac = "98:D3:31:90:3E:00";
         //String mac = "98:D3:31:B2:BB:7D";
         String strBluetoothDevice = SP.getString("bluetooth", mac); //mac;//
-
-        samplingR = intent.getIntExtra("samplingR", 360);
+        samplingR = Integer.parseInt(SP.getString("samplingRate","10"));
+        //samplingR = intent.getIntExtra("samplingR",1000);
         bufferWindowSize = Constants.WINDOW_SIZE * samplingR;
         buffer = new double[bufferWindowSize];
 

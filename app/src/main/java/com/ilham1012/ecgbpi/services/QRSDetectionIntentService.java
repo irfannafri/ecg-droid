@@ -30,7 +30,7 @@ public class QRSDetectionIntentService extends IntentService {
 
     private void handleQRSProcessing(Intent intent) {
         double[] buffer = intent.getDoubleArrayExtra(Constants.BITALINO60_BUFFER_DATA);
-        samplingR = intent.getIntExtra("samplingR", 360);
+        samplingR = intent.getIntExtra("samplingR", 10);
         ZeroCrossing zeroCrossing = new ZeroCrossing(buffer, samplingR);
         zeroCrossing.doZeroCrossing();
         int ith = intent.getIntExtra(Constants.ITH_BUFFERWINDOW, 0);

@@ -281,18 +281,8 @@
     <string name="service_id">this service unique id</string>
     <string name="title_activity_display_signal">DisplaySignalActivity</string>
 
-    <!-- Rating Rate -->
-    <string-array name="ratingRate">
-        <item>100</item>
-        <item>360</item>
-        <item>1000</item>
-    </string-array>
-    <string-array name="ratingRateValue">
-        <item>100</item>
-        <item>360</item>
-        <item>1000</item>
-    </string-array>
 
-    <string name="default_value_ratingRate">360</string>
+
+    <string name="default_value_ratingRate">100</string>
 
 </resources>
