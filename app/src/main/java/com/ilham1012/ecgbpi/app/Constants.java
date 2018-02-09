@@ -28,7 +28,7 @@ public class Constants {
 
     //RATE
     public static final Integer WINDOW_SIZE = 60;
-    public static final Integer SAMPLING_RATE = 1000; //360
+    public static final Integer SAMPLING_RATE = 100; //360
     public static final Integer BUFFER_WINDOW_SIZE = WINDOW_SIZE * SAMPLING_RATE;
     public static final String ITH_BUFFERWINDOW = "ITH_BUFFERWINDOW";
 
