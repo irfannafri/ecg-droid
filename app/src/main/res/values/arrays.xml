@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Rating Rate -->
+    <string-array name="ratingRate">
+        <item>10</item>
+        <item>100</item>
+        <item>1000</item>
+    </string-array>
+    <string-array name="ratingRateValue">
+        <item>10</item>
+        <item>100</item>
+        <item>1000</item>
+    </string-array>
+
+</resources>
