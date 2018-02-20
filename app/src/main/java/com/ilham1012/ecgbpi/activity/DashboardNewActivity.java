@@ -200,12 +200,20 @@ public class DashboardNewActivity extends AppCompatActivity {
             case R.id.settings:
                 gotoSetting();
                 return true;
+            case R.id.uploads:
+                uploadFile();
+                return true;
             case R.id.logout:
                 logoutUser();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    private void uploadFile() {
+        Intent intent = new Intent(this, UploadActivity.class);
+        startActivity(intent);
     }
 
     /**

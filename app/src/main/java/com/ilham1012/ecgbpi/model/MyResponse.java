@@ -5,4 +5,8 @@ package com.ilham1012.ecgbpi.model;
  */
 
 public class MyResponse {
+    public boolean error;
+    public String message;
+
+
 }

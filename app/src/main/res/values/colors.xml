@@ -39,7 +39,9 @@
     <color name="input_register">@color/greyLight</color>
     <color name="input_register_bg">@color/asphalt</color>
     <color name="input_register_hint">@color/asphaltLight</color>
-
+    <color name="bg_button_blue_sky">#4FC3F7</color>
+    <color name="bg_button_blue">#4FC3F7</color>
+    <color name="bg_purple">#9575CD</color>
 
 
 

@@ -26,9 +26,12 @@ dependencies {
     implementation 'com.mcxiaoke.volley:library:1.0.19'
     implementation 'com.bitalino:bitalino-java-sdk:1.0'
     implementation 'org.roboguice:roboguice:3.0b-experimental'
-    implementation 'com.squareup.retrofit:retrofit:1.5.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.0.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
     implementation 'com.jjoe64:graphview:4.0.1'
     implementation 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+    compile 'com.squareup.retrofit:retrofit:1.5.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     testImplementation 'junit:junit:4.12'
 }

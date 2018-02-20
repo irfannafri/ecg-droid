@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".activity.UploadActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/etRecordingName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_edit"
+            android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+            android:drawablePadding="20dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="12dp"
+            android:hint="Recording Name"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"/>
+
+        <EditText
+            android:id="@+id/etUserId"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_edit"
+            android:drawableLeft="@drawable/ic_portrait_black_24dp"
+            android:drawablePadding="20dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="12dp"
+            android:hint="UserId"
+            android:inputType="number"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"/>
+
+        <Button
+            android:background="@drawable/bg_button"
+            android:id="@+id/btnSimpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="14dp"
+            android:textColor="@android:color/white"
+            android:text="Upload Data" />
+    </LinearLayout>
+</LinearLayout>

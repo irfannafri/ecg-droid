@@ -4,6 +4,8 @@
         android:title="@string/menu_connect"/>
     <item android:id="@+id/settings"
         android:title="@string/menu_setting"/>
+    <item android:id="@+id/uploads"
+        android:title="@string/menu_upload"/>
     <item android:id="@+id/logout"
         android:title="@string/menu_logout" />
 </menu>

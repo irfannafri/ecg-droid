@@ -4,9 +4,13 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -43,6 +47,21 @@ public class LoginActivity extends AppCompatActivity {
 
         inputEmail = (EditText) findViewById(R.id.email);
         inputPassword = (EditText) findViewById(R.id.password);
+        CheckBox c = (CheckBox) findViewById(R.id.checkBox1);
+        c.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                // TODO Auto-generated method stub
+                if (!isChecked) {
+                    inputPassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                } else {
+                    inputPassword.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                }
+
+            }
+        });
+
         btnLogin = (Button) findViewById(R.id.btnLogin);
         btnLinkToRegister = (Button) findViewById(R.id.btnLinkToRegisterScreen);
 

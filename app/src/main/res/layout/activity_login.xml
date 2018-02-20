@@ -43,6 +43,16 @@
             android:textColor="@color/input_login"
             android:textColorHint="@color/input_login_hint" />
 
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/editText1"
+            android:layout_marginRight="30dp"
+            android:text="Show Password"
+            android:textColor="@android:color/white"/>
         <!-- Login Button -->
 
         <Button

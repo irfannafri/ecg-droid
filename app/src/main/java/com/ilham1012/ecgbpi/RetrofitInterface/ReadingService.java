@@ -19,9 +19,10 @@ package com.ilham1012.ecgbpi.RetrofitInterface;
 
 import com.ilham1012.ecgbpi.POJO.BITalinoReading;
 
-import retrofit.client.Response;
-import retrofit.http.Body;
-import retrofit.http.PUT;
+import retrofit2.Response;
+import retrofit2.http.Body;
+import retrofit2.http.PUT;
+
 
 /**
  * Definition of REST service available in BITalino Server.
