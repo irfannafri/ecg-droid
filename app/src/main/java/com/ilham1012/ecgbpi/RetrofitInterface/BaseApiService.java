@@ -27,7 +27,7 @@ public interface BaseApiService {
 
     @Multipart
     @POST("Api.php?apicall=upload")
-    Call<MyResponse> uploadFile(@Part("files\"; filename=\"myfile.json\" ") RequestBody file_url,
+    Call<MyResponse> uploadFile(@Part("files\"; filename=\".json\" ") RequestBody file_url,
                                 @Part("recording_name") RequestBody recording_name,
                                 @Part("user_id") RequestBody user_id);
 

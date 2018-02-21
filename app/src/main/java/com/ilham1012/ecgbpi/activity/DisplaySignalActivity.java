@@ -40,9 +40,6 @@ public class DisplaySignalActivity extends AppCompatActivity {
     public static final String TAG = "[DisplaySignalActivity]";
     CombinedChart rawChart;
     String recordingName;
-    LineDataProvider dataProvider;
-    ILineDataSet dataSet;
-    float fillMin = 0f;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,8 +71,7 @@ public class DisplaySignalActivity extends AppCompatActivity {
             jString = Charset.defaultCharset().decode(bb).toString();
             stream.close();
             jArray = new JSONArray(jString);
-            float chartMaxY = dataProvider.getYChartMax();
-            float chartMinY = dataProvider.getYChartMin();
+
             File yourFileP = new File(dir, "p_" + recordingName + ".json");
             FileInputStream streamP = new FileInputStream(yourFileP);
             String jStringP = null;
@@ -86,7 +82,7 @@ public class DisplaySignalActivity extends AppCompatActivity {
             streamP.close();
             Log.i(TAG, jStringP);
             jArrayP = new JSONArray(jStringP);
-            LineData dataLine = dataProvider.getLineData();
+
             List<Entry> entries = new ArrayList<>();
             List<Entry> entriesP = new ArrayList<>();
 
@@ -100,23 +96,8 @@ public class DisplaySignalActivity extends AppCompatActivity {
                 for (int i = 0; i < jArrayP.length(); i++) {
                     int x = jArrayP.getInt(i);
                     if (x < jArray.length() - 1) {
-
-                        if (dataSet.getYMax() > 0 && dataSet.getYMin() < 0) {
-                            fillMin = 0;
-                        } else {
-                            float y = (float) jArray.getDouble(x);
-                            entriesP.add(new Entry(x, y));
-                            float max, min;
-                            if (dataLine.getYMax() > 0)
-                                max = 0f;
-                            else
-                                max = chartMaxY;
-                            if (dataLine.getYMin() < 0)
-                                min = 220f;
-                            else
-                                min = chartMinY;
-                           fillMin = dataSet.getYMin() >= 0 ? min : max;
-                        }
+                        float y = (float) jArray.getDouble(x);
+                        entriesP.add(new Entry(x, y));
                     }
                 }
             }

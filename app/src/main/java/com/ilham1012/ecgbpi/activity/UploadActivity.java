@@ -1,6 +1,7 @@
 package com.ilham1012.ecgbpi.activity;
 
 import android.Manifest;
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -10,16 +11,22 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.provider.MediaStore;
 import android.provider.Settings;
 import android.support.annotation.Nullable;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.Snackbar;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.content.CursorLoader;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -34,7 +41,10 @@ import com.ilham1012.ecgbpi.app.UtilsApi;
 import com.ilham1012.ecgbpi.model.MyResponse;
 import com.ilham1012.ecgbpi.model.ServerResponse;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 
 import okhttp3.MediaType;
 import okhttp3.MultipartBody;
@@ -54,13 +64,25 @@ public class UploadActivity extends AppCompatActivity {
 
     private EditText inputRecordName, inputUserId;
     private Button btnUpload;
+    private Toolbar toolbar;
     String mediaPath;
-    public int PICKFILE_REQUEST_CODE = 1;
+    private File file;
+    private CoordinatorLayout coordinatorLayout;
+    private static final int PICK_FILE_REQUEST = 1;
+    private static final int REQUEST_EXTERNAL_STORAGE = 1;
+    private static String[] PERMISSIONS_STORAGE = {
+            Manifest.permission.READ_EXTERNAL_STORAGE,
+            Manifest.permission.WRITE_EXTERNAL_STORAGE
+    };
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_upload);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        coordinatorLayout = (CoordinatorLayout) findViewById(R.id.coordinatorLayout);
         inputRecordName = (EditText) findViewById(R.id.etRecordingName);
         inputUserId = (EditText) findViewById(R.id.etUserId);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && ContextCompat.checkSelfPermission(this,
@@ -78,8 +100,11 @@ public class UploadActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //opening file chooser
                 Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-                intent.setType("*files/*");
-                startActivityForResult(intent, PICKFILE_REQUEST_CODE);
+                Uri uri = Uri.parse(Environment.getExternalStorageDirectory().getPath()
+                        + "/ecgbpi/ecgrecord/");
+                intent.setDataAndType(uri, "*/*");
+                intent.setAction(Intent.ACTION_GET_CONTENT);
+                startActivityForResult(Intent.createChooser(intent, "Open folder"),PICK_FILE_REQUEST);
             }
         });
     }
@@ -87,17 +112,19 @@ public class UploadActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == PICKFILE_REQUEST_CODE && resultCode == RESULT_OK && data != null) {
-            //the image URI
-            Uri selectedImage = data.getData();
+        if (requestCode == PICK_FILE_REQUEST && resultCode == RESULT_OK && data != null) {
+            Uri selectedFilePath = data.getData();
 
             //calling the upload file method after choosing the file
-            uploadFile(selectedImage);
+            uploadFile(selectedFilePath);
         }
     }
 
     private void uploadFile(Uri fileUri) {
-
+        final ProgressDialog progressDialog;
+        progressDialog = new ProgressDialog(UploadActivity.this);
+        progressDialog.setMessage("loading...");
+        progressDialog.show();
         //creating a file
         File file = new File(getRealPathFromURI(fileUri));
         //creating request body for file
@@ -119,15 +146,18 @@ public class UploadActivity extends AppCompatActivity {
         //creating our api
         BaseApiService api = retrofit.create(BaseApiService.class);
 
-        //creating a call and calling the upload image method
         Call<MyResponse> call = api.uploadFile(requestFile, recording_name, user_id);
 
         //finally performing the call
         call.enqueue(new Callback<MyResponse>() {
             @Override
             public void onResponse(Call<MyResponse> call, Response<MyResponse> response) {
+                progressDialog.dismiss();
                 if (!response.body().error) {
-                    Toast.makeText(getApplicationContext(), "File Uploaded Successfully...", Toast.LENGTH_LONG).show();
+                    Snackbar snackbar = Snackbar
+                            .make(coordinatorLayout, "Success Upload", Snackbar.LENGTH_LONG);
+
+                    snackbar.show();
                 } else {
                     Toast.makeText(getApplicationContext(), "Some error occurred...", Toast.LENGTH_LONG).show();
                 }
@@ -135,26 +165,38 @@ public class UploadActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<MyResponse> call, Throwable t) {
+                progressDialog.dismiss();
                 Toast.makeText(getApplicationContext(), t.getMessage(), Toast.LENGTH_LONG).show();
             }
         });
 
     }
 
-    /*
-    * This method is fetching the absolute path of the image file
-    * if you want to upload other kind of files like .pdf, .docx
-    * you need to make changes on this method only
-    * Rest part will be the same
-    * */
+
     private String getRealPathFromURI(Uri contentUri) {
-        String[] proj = {MediaStore.Files.FileColumns.DATA};
-        CursorLoader loader = new CursorLoader(this, contentUri, proj, null, null, null);
+        String[] proj = { MediaStore.Images.Media.DATA };
+        CursorLoader loader = new CursorLoader(getApplicationContext(), contentUri, proj, null, null, null);
         Cursor cursor = loader.loadInBackground();
-        int column_index = cursor.getColumnIndexOrThrow(MediaStore.Files.FileColumns.DATA);
+        int column_index = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
         cursor.moveToFirst();
         String result = cursor.getString(column_index);
         cursor.close();
         return result;
+    }
+
+
+
+    public static void verifyStoragePermissions(Activity activity) {
+        // Check if we have write permission
+        int permission = ActivityCompat.checkSelfPermission(activity, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+
+        if (permission != PackageManager.PERMISSION_GRANTED) {
+            // We don't have permission so prompt the user
+            ActivityCompat.requestPermissions(
+                    activity,
+                    PERMISSIONS_STORAGE,
+                    REQUEST_EXTERNAL_STORAGE
+            );
+        }
     }
 }
