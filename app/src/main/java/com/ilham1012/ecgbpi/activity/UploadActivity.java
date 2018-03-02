@@ -81,7 +81,12 @@ public class UploadActivity extends AppCompatActivity {
         setContentView(R.layout.activity_upload);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        Intent intents = getIntent();
+        Bundle bundle = intents.getExtras();
+        if (bundle != null) {
+            String recording = (String) bundle.get("recording_name");
+            inputRecordName.setText(recording);
+        }
         coordinatorLayout = (CoordinatorLayout) findViewById(R.id.coordinatorLayout);
         inputRecordName = (EditText) findViewById(R.id.etRecordingName);
         inputUserId = (EditText) findViewById(R.id.etUserId);

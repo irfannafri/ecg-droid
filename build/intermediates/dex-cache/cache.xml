@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/firman/.gradle/caches/modules-2/files-2.1/com.github.PhilJay/MPAndroidChart/v3.0.2/5d4eb08a326bdbd7fbbddc769666898c9936b282/MPAndroidChart-v3.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5d4eb08a326bdbd7fbbddc769666898c9936b282">
+        <dex dex="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/pre-dexed/debug/MPAndroidChart-v3.0.2_9920bce17f5181f923c5bb85f9d9a781e6828b23.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/firman/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.19/a8f23f65fc1e522ee4a1a697ee569901a46741fa/library-1.0.19.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a8f23f65fc1e522ee4a1a697ee569901a46741fa">
+        <dex dex="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/pre-dexed/debug/library-1.0.19_2621975c3ad048835e59c703429b8839f0850b4f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.3.1_16a2a5a1d0f273c5e5ca1402123a310bc4cf2431.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/firman/.gradle/caches/modules-2/files-2.1/asm/asm/3.1/c157def142714c544bdea2e6144645702adf7097/asm-3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c157def142714c544bdea2e6144645702adf7097">
+        <dex dex="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/pre-dexed/debug/asm-3.1_2e435091eca478b80d554a76a7f9b56316733d1b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/firman/.gradle/caches/modules-2/files-2.1/org.sonatype.sisu.inject/cglib/2.2.1-v20090111/7ce5e983fd0e6c78346f4c9cbfa39d83049dda2/cglib-2.2.1-v20090111.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="07ce5e983fd0e6c78346f4c9cbfa39d83049dda2">
+        <dex dex="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/pre-dexed/debug/cglib-2.2.1-v20090111_ba2834df4f9e9df2285f5ccc801c7f3a26d9aad3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/firman/.gradle/caches/modules-2/files-2.1/com.bitalino/bitalino-java-sdk/1.0/a54e973a30fcffb3edbcf2ed1ea4a4d459aef9c6/bitalino-java-sdk-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a54e973a30fcffb3edbcf2ed1ea4a4d459aef9c6">
+        <dex dex="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/pre-dexed/debug/bitalino-java-sdk-1.0_f251b76a8d23b7e0cf689526131c96b93c0fe552.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/exploded-aar/com.android.support.constraint/constraint-layout/1.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/pre-dexed/debug/com.android.support.constraint-constraint-layout-1.0.2_f54bf1bd4c39d0456582241cff77dd2c34cb516a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/firman/.gradle/caches/modules-2/files-2.1/com.google.inject/guice/3.0/28586dc97c525501329d9a242fc3402041e3572d/guice-3.0-no_aop.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="28586dc97c525501329d9a242fc3402041e3572d">
+        <dex dex="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/pre-dexed/debug/guice-3.0-no_aop_f4e896971b32e0a5079e8eb1bf92496591a88163.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/opt/android-studio/gradle/m2repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/pre-dexed/debug/gson-2.2.4_ee0179183cc12d87b762899f0e71bd373d3fee7f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/firman/.gradle/caches/modules-2/files-2.1/org.roboguice/roboguice/3.0b-experimental/8290a88afc247c0d3c1bb3efd57f4eb03c6fb21c/roboguice-3.0b-experimental.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8290a88afc247c0d3c1bb3efd57f4eb03c6fb21c">
+        <dex dex="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/pre-dexed/debug/roboguice-3.0b-experimental_a39388b8f1d49b4e9e1da9a32d7585203863387e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.3.1_effd258bd26a6bc44d7898fc9beeb4de343ef85e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.3.1_bc263d0e4746af185f5dc5cff2d21b753c714a93.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.3.1_228334331a728244407048512370517094d04f5d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.3.1_4eb2580ed25374859cc5266216ad69ce2d5f3d12.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/firman/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0235ba8b489512805ac13a8f9ea77a1ca5ebe3e8">
+        <dex dex="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/pre-dexed/debug/aopalliance-1.0_c65a266868736c338d62e8199b85d15d65301f35.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/firman/Android/Sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/pre-dexed/debug/constraint-layout-solver-1.0.2_ba390d1a943df41b1c5b9203e8bad2cda0692ed4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/firman/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/pre-dexed/debug/javax.inject-1_4ff8c6c649abb554edab071a8dbb4d6082085b2c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.3.1_8f7185de445ba035ba23ff50d101d864cafce44e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/firman/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.5.0/54271c5c7a4dfa1c7cd53d0b10956ea35d32abb0/retrofit-1.5.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="54271c5c7a4dfa1c7cd53d0b10956ea35d32abb0">
+        <dex dex="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/pre-dexed/debug/retrofit-1.5.0_dcb9cb31d2498dacaae9a7b57686cb8513998b1f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/exploded-aar/com.android.support/transition/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.3.1_8f8cd8fc0e5cd90b71e3e9d4de21edb43a484f5b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.3.1_7bcdc549812eb009927f9c94171de7be29d25d1f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.3.1_12a64eacdfc1e201e1736ed55453d7ae1e598a6b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.3.1_661283a7aca6f8ad8d226c6bc1844d90da0cf011.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.3.1_2537c47f01f1aaf722ccd3b45b2b2b30c6e289fd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/firman/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/16.0.1/5fa98cd1a63c99a44dd8d3b77e4762b066a5d0c5/guava-16.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5fa98cd1a63c99a44dd8d3b77e4762b066a5d0c5">
+        <dex dex="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/pre-dexed/debug/guava-16.0.1_965ba0ff6ea33e89eccb17747f9d1e5be25b98ff.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.3.1_400f3ab31a6f28a9fa2285d600ebd02dac5ee92d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/exploded-aar/com.jjoe64/graphview/4.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="37bf8de5b4f9e7e93006db783b9b3168e32e38e9">
+        <dex dex="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/pre-dexed/debug/com.jjoe64-graphview-4.0.1_7877b109194b067a775d36b33c02cdb41460271c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/firman/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/home/firman/StudioProjects/ecg-droid/app/build/intermediates/pre-dexed/debug/support-annotations-25.3.1_e518f2cfccf26e2be3013e5c14e590bff05d9865.jar" />
+    </item>
+
+</items>

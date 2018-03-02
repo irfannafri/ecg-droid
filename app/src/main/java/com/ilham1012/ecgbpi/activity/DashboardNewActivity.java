@@ -26,6 +26,9 @@ import com.ilham1012.ecgbpi.R;
 import com.ilham1012.ecgbpi.helper.SQLiteHandler;
 import com.ilham1012.ecgbpi.helper.SessionManager;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class DashboardNewActivity extends AppCompatActivity {
     private SQLiteHandler db;
     private SessionManager session;
@@ -90,6 +93,40 @@ public class DashboardNewActivity extends AppCompatActivity {
     }
 
 
+    public void MenuDialog(){
+        final View view = null;
+
+        List<String> menu = new ArrayList<String>();
+        menu.add("Upload");
+        menu.add("Grapg");
+        final CharSequence[] menus = menu.toArray(new String[menu.size()]);
+        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
+        final EditText edt = (EditText) findViewById(R.id.etRecordingName);
+        dialogBuilder.setItems(menus, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int item) {
+                String selectedText = menus[item].toString();
+                if (selectedText.equals("Upload")) {
+                    Intent i = new Intent(DashboardNewActivity.this, DisplaySignalActivity.class);
+                    i.putExtra("recording_name", edt.getText().toString());
+                    startActivity(i);
+                } else if (selectedText.equals("Graph")) {
+                    Cursor cursor = (Cursor) listView.getItemAtPosition(item);
+
+                    // Get the state's capital from this row in the database.
+                    String clickedName =
+                            cursor.getString(cursor.getColumnIndexOrThrow("recording_name"));
+                    Toast.makeText(getApplicationContext(),
+                            clickedName, Toast.LENGTH_SHORT).show();
+
+                    Intent i = new Intent(DashboardNewActivity.this, DisplaySignalActivity.class);
+                    i.putExtra("recording_name", clickedName);
+                    startActivity(i);
+                }
+            }
+        });
+        AlertDialog alertDialogObject = dialogBuilder.create();
+        alertDialogObject.show();
+    }
 
     private void displayAlertDialog(){
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
@@ -150,6 +187,7 @@ public class DashboardNewActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> listView, View view,
                                     int position, long id) {
                 // Get the cursor, positioned to the corresponding row in the result set
+//                MenuDialog();
                 Cursor cursor = (Cursor) listView.getItemAtPosition(position);
 
                 // Get the state's capital from this row in the database.
